@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="btn">
+        <button id="draw">ドロー</button>
+        <button id="del">捨てる</button>
+        <button id="use">使う</button>
+        <button id="atk">フェイズ移行</button>
+        <button id="atk_e">フェイズ移行</button>
+        <button id="log_b">ログ</button>
+    </div>
+    <div class="state">
+        <p>HP:<span id="hp">4000</span> 使用可能コスト:<span id="cost"></span><span id="msg"></span></p>
+
+    </div>
+    <div class="field">
+        <p><span id="e_name"></span> ATK <span id="e_atk"></span>
+            DEF <span id="e_def"></span></p>
+        <p>HP <span id="e_hp"></span></p>
+        <div class="ezone">
+            <img src="./enem/0.png" alt="" class="eemh">
+        </div>
+        <div class="tzone">
+        </div>
+    </div>
+    <div class="handli">
+    </div>
+    <div class="semet">
+        <p>セメタリー</p>
+        <img src="./card/t1.png" alt="" class="semet__img">
+    </div>
+    <div id="effect">
+        <p>
+            コスト<span id="c_cost"></span> <span id="c_name"></span>
+        </p>
+        <p id="c_effect"></p>
+        <p>ATK <span id="c_atk"></span> HP <span id="c_hp"></span>
+        <p>
+    </div>
+    <div id="battle_log" class="active"></div>
+    <div id="semet__log" class=""></div>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.handli {
+    position: absolute;
+    bottom: 40px;
+    left: 7vw;
+    width: 50vw;
+    z-index: 1;
+    display: flex;
+    margin-top: 200px;
+    align-items: baseline;
+
+    & img {
+        width: auto;
+        height: 15vh;
+        transition: all 0.2s;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        margin: 0 5px;
+
+        &.active {
+            margin-left: 30px;
+            transform: translate(-50%, -50%);
+            transition: all 0.2s;
+            height: 20vh;
+        }
+    }
+}
+
+.btn {
+    z-index: 2000000000000;
+    position: absolute;
+    display: flex;
+    bottom: 10px;
+    left: 20px;
+}
+
+button {
+    margin: 20px;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.semet {
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#semet__log {
+    position: absolute;
+    bottom: -30vh;
+    width: 30vw;
+    height: 30vh;
+    right: 10vw;
+    padding: 10px;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    border: 3px solid black;
+    transition: all 0.2s;
+    overflow: auto;
+
+    &.active {
+        bottom: 2vh;
+        transition: all 0.2s;
+    }
+
+    & p {
+        margin-bottom: 5px;
+    }
+}
+
+#msg {
+    margin-left: 10px;
+}
+
+.state {
+    margin-left: 10em;
+}
+
+#effect {
+    position: absolute;
+    right: 200px;
+    bottom: -300px;
+    text-align: center;
+    transition: all 0.2s;
+    width: 30em;
+
+    &.active {
+        transition: all 0.2s;
+        bottom: 40px;
+    }
+
+    & p {
+        margin-top: 5px;
+    }
+}
+
+#battle_log {
+    position: absolute;
+    height: 100vh;
+    width: 20vw;
+    padding: 10px 10px;
+    right: -19.5vw;
+    bottom: 0;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    border-left: 3px solid black;
+    transition: all 0.2s;
+    z-index: 2000000000;
+    overflow: auto;
+
+    &.active {
+        right: 0;
+        transition: all 0.2s;
+    }
+
+    & p {
+        margin-bottom: 5px;
+    }
+}
+
+.field {
+    height: 60vh;
+    width: 90vw;
+    margin: 0 auto;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+.ezone,
+.tzone {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+
+
+    &:last-child {
+        margin-top: 1%;
+        vertical-align: bottom;
+        align-items: flex-end;
+    }
+
+    &.eemg {
+        height: 100%;
+    }
+
+    &__m {
+        height: 90%;
+    }
+
+    & img {
+        display: block;
+        width: auto;
+        margin: 0 10px;
+    }
+
+
+}
+
+.bz_c {
+    height: 100%;
+
+    & p {
+        position: static;
+        display: block;
+        z-index: 1000;
+        color: black;
+        margin-top: 10px;
+    }
+}
