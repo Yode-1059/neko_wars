@@ -4,6 +4,18 @@ body {
   padding-top: 10px;
 }
 
+.howto {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  border: 1px #4f4f4f solid;
+  border-radius: 2px;
+  padding: 3px;
+  text-decoration: none;
+  color: white;
+  background-color: #4f4f4f;
+}
+
 .handli {
   position: absolute;
   bottom: 40px;
